@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragment2"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:contentDescription="@string/name_profile"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/iv_name"
+                    style="@style/TextWhiteRocknRollBold12Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/iv_profile"
+                    android:text="@string/name_profile"
+                    app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/iv_description_profile"
+                    style="@style/TextWhiteRocknRoll8Regular"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_name"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/iv_profile"
+                    android:text="@string/description_profile"
+                    app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ll_container_makes_mikes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/purple"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_profile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    style="@style/TextWhiteRocknRollBold14Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/hobby" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_hobby1"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/hobby_1"
+                        android:src="@drawable/renang"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobby_1"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_hobby1"
+                        app:layout_constraintStart_toStartOf="@+id/iv_hobby1"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_hobby1" />
+
+                    <ImageView
+                        android:id="@+id/iv_hobby2"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/hobby_2"
+                        android:src="@drawable/sepak_bola"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_hobby3"
+                        app:layout_constraintStart_toEndOf="@+id/iv_hobby1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobby_2"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_hobby2"
+                        app:layout_constraintStart_toStartOf="@+id/iv_hobby2"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_hobby2" />
+
+                    <ImageView
+                        android:id="@+id/iv_hobby3"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/hobby_3"
+                        android:src="@drawable/musik"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hobby_3"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_hobby3"
+                        app:layout_constraintStart_toStartOf="@+id/iv_hobby3"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_hobby3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    style="@style/TextWhiteRocknRollBold14Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/makes" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_makes1"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/makes_1"
+                        android:src="@drawable/ikan"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/makes_1"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_makes1"
+                        app:layout_constraintStart_toStartOf="@+id/iv_makes1"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_makes1" />
+
+                    <ImageView
+                        android:id="@+id/iv_makes2"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/makes_2"
+                        android:src="@drawable/ayam"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_makes3"
+                        app:layout_constraintStart_toEndOf="@+id/iv_makes1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/makes_2"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_makes2"
+                        app:layout_constraintStart_toStartOf="@+id/iv_makes2"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_makes2" />
+
+                    <ImageView
+                        android:id="@+id/iv_makes3"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/makes_3"
+                        android:src="@drawable/dimsum"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/makes_3"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_makes3"
+                        app:layout_constraintStart_toStartOf="@+id/iv_makes3"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_makes3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    style="@style/TextWhiteRocknRollBold14Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/mikes" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_mikes1"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/mikes_1"
+                        android:src="@drawable/kopi"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mikes_1"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_mikes1"
+                        app:layout_constraintStart_toStartOf="@+id/iv_mikes1"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_mikes1" />
+
+                    <ImageView
+                        android:id="@+id/iv_mikes2"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/mikes_2"
+                        android:src="@drawable/eskelapa"
+                        app:layout_constraintEnd_toStartOf="@+id/iv_mikes3"
+                        app:layout_constraintStart_toEndOf="@+id/iv_mikes1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mikes_2"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_mikes2"
+                        app:layout_constraintStart_toStartOf="@+id/iv_mikes2"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_mikes2" />
+
+                    <ImageView
+                        android:id="@+id/iv_mikes3"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:contentDescription="@string/mikes_3"
+                        android:src="@drawable/esjeruk"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/TextWhiteRocknRoll8Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mikes_3"
+                        app:layout_constraintEnd_toEndOf="@+id/iv_mikes3"
+                        app:layout_constraintStart_toStartOf="@+id/iv_mikes3"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_mikes3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

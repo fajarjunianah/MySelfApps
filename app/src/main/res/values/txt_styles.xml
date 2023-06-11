@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RocknRoll" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/rocknroll</item>
+    </style>
+
+    <style name="TextWhiteRocknRollBold18Light" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextPurpleRocknRollBold18Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_purple</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextWhiteRocknRollBold14Light" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextWhiteRocknRollBold14Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextWhiteRocknRollBold12Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextWhiteRocknRoll12Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextWhiteRocknRoll10Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="TextWhiteRocknRoll8Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+    </style>
+
+    <style name="TextWhiteRocknRollItalic8Regular" parent="RocknRoll">
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

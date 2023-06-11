@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">MySelfApps</string>
+    <string name="title1">Welcome!</string>
+    <string name="title2">Daily Activity</string>
+    <string name="title3">Gallery</string>
+    <string name="description1">Selamat datang di aplikasi saya! Dengan menggunakan fitur Profil, Anda dapat melihat gambar diri saya dan membaca deskripsi singkat mengenai saya.</string>
+    <string name="description2">Mudah untuk melihat rutinitas harian saya yang mencakup aktivitas sehari-hari.</string>
+    <string name="description3">Anda dapat menikmati berbagai momen indah dalam hidup saya melalui fitur Galeri.</string>
+    <string name="name_profile">Fajar Juniansah Sadikin</string>
+    <string name="description_profile">Mahasiswa dari Universitas Komputer Indonesia, jurusan Teknik Informatika.</string>
+    <string name="hobby">Hobby</string>
+    <string name="makes">Makes</string>
+    <string name="daily_activity">Daily Activity</string>
+    <string name="mikes">Mikes</string>
+    <string name="gallery">Gallery</string>
+    <string name="music_favorite">Music Favorite</string>
+    <string name="friends_list">Friends List</string>
+    <string name="video_favorite">Video Favorite</string>
+    <string name="background_fragment">Background Fragment</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="find_me">Find Me !</string>
+    <string name="about_apps">About Apps</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="myselfapps_v1_0">MyselfApps V1.0</string>
+
+    <!--    Daily Data RecylerView  -->
+    <string name="nama_kegiatan1">Makan</string>
+    <string name="nama_kegiatan2">Kuliah</string>
+    <string name="nama_kegiatan3">Olahraga</string>
+    <string name="nama_kegiatan4">Bermain</string>
+    <string name="nama_kegiatan5">Tidur</string>
+
+    <!--    Friends Data RecylerView    -->
+    <string name="nama_teman1">Arif</string>
+    <string name="nama_teman2">Adit</string>
+    <string name="nama_teman3">Naufal</string>
+    <string name="nama_teman4">Faris</string>
+    <string name="nama_teman5">Fahmi</string>
+    <string name="nama_teman6">Abyan</string>
+    <string name="nama_teman7">Tri</string>
+
+    <!--    Music Data RecylerView-->
+    <string name="nama_lagu1">Joji - Glimpse Of Us</string>
+    <string name="nama_lagu2">Cocomelon - Ayo Menabung</string>
+    <string name="nama_lagu3">Cocomelon - Membuat Prakarya</string>
+    <string name="nama_lagu4">Cocomelon - Bintang Kecil Di Langit</string>
+
+
+    <!--    Hobby   -->
+    <string name="hobby_1">Renang</string>
+    <string name="hobby_2">Sepak Bola</string>
+    <string name="hobby_3">Musik</string>
+
+    <!--    Makes-->
+    <string name="makes_1">Nasi Ikan</string>
+    <string name="makes_2">Nasi Ayam</string>
+    <string name="makes_3">Dimsum</string>
+
+    <!--    Mikes-->
+    <string name="mikes_1">Kopi</string>
+    <string name="mikes_2">Kelapa Muda</string>
+    <string name="mikes_3">Es Jeruk</string>
+
+
+
+</resources>
